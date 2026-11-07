@@ -1,0 +1,115 @@
+# ============================================================== #
+#                   WinterEssentials Config                      #
+#                                 Made by winterslaap/Youp       #
+# ============================================================== #
+
+# Centrale prefix (MiniMessage formatting)
+prefix: "<gradient:#80D8FF:#ECEFF1>Winter</gradient> <dark_gray>»</dark_gray> <gray>"
+
+# Aan/uit toggles per commando
+commands:
+  trash:
+    enabled: true
+    cooldown: 0
+  repair_hand:
+    enabled: true
+    cooldown: 300
+  repair_all:
+    enabled: true
+    cooldown: 1800
+  feed:
+    enabled: true
+    cooldown: 60
+  craft:
+    enabled: true
+    cooldown: 0
+  anvil:
+    enabled: true
+    cooldown: 0
+  grindstone:
+    enabled: true
+    cooldown: 0
+  stonecutter:
+    enabled: true
+    cooldown: 0
+  cartography:
+    enabled: true
+    cooldown: 0
+  smithing:
+    enabled: true
+    cooldown: 0
+  loom:
+    enabled: true
+    cooldown: 0
+  enderchest:
+    enabled: true
+    cooldown: 0
+  vault:
+    enabled: true
+    cooldown: 0
+  sethome:
+    enabled: true
+    cooldown: 0
+  delhome:
+    enabled: true
+    cooldown: 0
+  home:
+    enabled: true
+    cooldown: 10
+  homes:
+    enabled: true
+    cooldown: 0
+
+# Cooldowns in seconden
+cooldowns:
+  repair_hand: 300
+  repair_all: 1800
+  feed: 60
+  home: 10
+
+# Teleportatie instellingen voor /home
+teleport:
+  warmup_seconds: 5
+  cancel_on_move: true
+  cancel_on_damage: true
+  particles: true # Subtiele sneeuw particles
+  sound: true
+
+# Standaard limieten wanneer geen permission node is ingesteld
+defaults:
+  max_homes: 1
+  max_vaults: 1
+
+# Alle chatberichten, actionbars en GUI titels (MiniMessage)
+messages:
+  no_permission: "<red>Hier heb je geen rechten voor."
+  on_cooldown: "<red>Wacht nog <white>{time}</white> voordat je dit weer gebruikt."
+  teleporting: "<gray>Teleporteren naar <#80D8FF>{home}</#80D8FF>..."
+  teleport_cancelled: "<red>Teleportatie geannuleerd omdat je bewoog of schade opliep."
+  teleport_countdown_title: ""
+  teleport_countdown_subtitle: ""
+  teleport_countdown_actionbar: "<#80D8FF>Teleportatie in <white>{seconden}s<#80D8FF>..."
+  teleport_success: "<#80D8FF>Succesvol geteleporteerd naar <white>{home}</white>."
+  vault_limit_reached: "<red>Je hebt geen toegang tot vault nummer <white>{number}</white>."
+  vault_title: "<#80D8FF>Vault #{number}"
+  trash_title: "<#80D8FF>Prullenbak"
+  repaired_hand: "<green>Item in je hand is gerepareerd."
+  repaired_all: "<green>Alle items in je inventory zijn gerepareerd."
+  repair_no_damage: "<red>Dit item heeft al volledige durability."
+  repair_no_items: "<red>Er zijn geen items gevonden die gerepareerd moeten worden."
+  repair_empty_hand: "<red>Houd een item vast om te repareren."
+  fed: "<green>Je honger en saturation zijn volledig hersteld."
+  fed_other: "<green>Honger en saturation van <white>{target}</white> zijn hersteld."
+  fed_by_other: "<green>Je honger en saturation zijn hersteld door <white>{sender}</white>."
+  player_not_found: "<red>Speler niet gevonden."
+  home_set: "<green>Home <white>{home}</white> succesvol opgeslagen."
+  home_deleted: "<green>Home <white>{home}</white> is verwijderd."
+  home_not_found: "<red>Home <white>{home}</white> bestaat niet."
+  home_world_not_found: "<red>De wereld van deze home is niet geladen."
+  home_limit_reached: "<red>Je hebt je maximale aantal homes bereikt (<white>{limit}</white>)."
+  homes_empty: "<gray>Je hebt nog geen homes ingesteld. Gebruik <#80D8FF>/sethome <naam></#80D8FF>."
+  homes_header: "<#80D8FF>Jouw homes (<white>{count}</white>/<white>{limit}</white>):"
+  homes_format: "<gray>- <hover:show_text:'<#80D8FF>Klik om te teleporteren naar {home}\n<gray>X: <white>{x}</white> Y: <white>{y}</white> Z: <white>{z}</white> ({world})'><click:run_command:'/home {home}'><#80D8FF>{home}</#80D8FF></click></hover>"
+  command_disabled: "<red>Dit commando is uitgeschakeld."
+  only_players: "<red>Dit commando kan alleen door spelers worden uitgevoerd."
+  reload_success: "<green>WinterEssentials configuratie succesvol herladen."

@@ -1,0 +1,135 @@
+name: WinterEssentials
+version: 1.0.0
+main: nl.winteressentials.WinterEssentials
+api-version: '1.21'
+author: TotemSMP
+description: Clean, lightweight and optimized Paper essentials plugin with a winter theme.
+softdepend: [LuckPerms]
+
+commands:
+  trash:
+    description: Open de prullenbak om ongewenste items weg te gooien.
+    aliases: [prullenbak, bin, trashcan]
+    permission: winteressentials.command.trash
+  repair:
+    description: Repareer beschadigde items in hand of inventory.
+    usage: /<command> [hand|all]
+  feed:
+    description: Herstel honger en saturation.
+    usage: /<command> [speler]
+    permission: winteressentials.command.feed
+  craft:
+    description: Open een virtuele werkbank.
+    aliases: [workbench, wbench]
+    permission: winteressentials.command.craft
+  anvil:
+    description: Open een virtueel aambeeld.
+    permission: winteressentials.command.anvil
+  grindstone:
+    description: Open een virtuele slijpsteen.
+    permission: winteressentials.command.grindstone
+  stonecutter:
+    description: Open een virtuele steenzaag.
+    permission: winteressentials.command.stonecutter
+  cartography:
+    description: Open een virtuele cartografietafel.
+    permission: winteressentials.command.cartography
+  smithing:
+    description: Open een virtuele smeedtafel.
+    permission: winteressentials.command.smithing
+  loom:
+    description: Open een virtueel weefgetouw.
+    permission: winteressentials.command.loom
+  enderchest:
+    description: Open jouw enderchest op afstand.
+    aliases: [ec]
+    permission: winteressentials.command.enderchest
+  personalvaults:
+    description: Open een persoonlijke virtuele kluis.
+    aliases: [pv, vault]
+    usage: /<command> <1-99>
+    permission: winteressentials.command.vault
+  sethome:
+    description: Stel een nieuwe home locatie in.
+    usage: /<command> [naam]
+    permission: winteressentials.command.sethome
+  home:
+    description: Teleporteer naar een opgeslagen home.
+    usage: /<command> [naam]
+    permission: winteressentials.command.home
+  delhome:
+    description: Verwijder een opgeslagen home.
+    aliases: [deletehome, remhome]
+    usage: /<command> <naam>
+    permission: winteressentials.command.delhome
+  homes:
+    description: Bekijk al jouw opgeslagen homes.
+    permission: winteressentials.command.homes
+  winteressentials:
+    description: Hoofdcommando voor WinterEssentials beheer.
+    aliases: [we, wessentials]
+
+permissions:
+  winteressentials.command.trash:
+    description: Toegang tot /trash
+    default: true
+  winteressentials.command.repair.hand:
+    description: Toegang tot /repair hand
+    default: op
+  winteressentials.command.repair.all:
+    description: Toegang tot /repair all
+    default: op
+  winteressentials.command.feed:
+    description: Toegang tot /feed
+    default: op
+  winteressentials.command.feed.others:
+    description: Toegang tot /feed op andere spelers
+    default: op
+  winteressentials.command.craft:
+    description: Toegang tot /craft
+    default: true
+  winteressentials.command.anvil:
+    description: Toegang tot /anvil
+    default: true
+  winteressentials.command.grindstone:
+    description: Toegang tot /grindstone
+    default: true
+  winteressentials.command.stonecutter:
+    description: Toegang tot /stonecutter
+    default: true
+  winteressentials.command.cartography:
+    description: Toegang tot /cartography
+    default: true
+  winteressentials.command.smithing:
+    description: Toegang tot /smithing
+    default: true
+  winteressentials.command.loom:
+    description: Toegang tot /loom
+    default: true
+  winteressentials.command.enderchest:
+    description: Toegang tot /enderchest
+    default: true
+  winteressentials.command.vault:
+    description: Toegang tot /vault en /pv
+    default: true
+  winteressentials.command.sethome:
+    description: Toegang tot /sethome
+    default: true
+  winteressentials.command.home:
+    description: Toegang tot /home
+    default: true
+  winteressentials.command.delhome:
+    description: Toegang tot /delhome
+    default: true
+  winteressentials.command.homes:
+    description: Toegang tot /homes
+    default: true
+  winteressentials.bypass.cooldown:
+    description: Bypasst alle command cooldowns
+    default: op
+  winteressentials.bypass.teleportdelay:
+    description: Bypasst de teleport countdown timer
+    default: op
+  winteressentials.admin.reload:
+    description: Toegang tot /winteressentials reload
+    default: op
